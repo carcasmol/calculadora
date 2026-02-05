@@ -192,7 +192,7 @@ Este proyecto es de código abierto y puede ser utilizado libremente para fines 
 ## Contacto y Soporte
 
 Para reportar bugs o sugerir mejoras, contactar al equipo de desarrollo.
-
+![Imagen](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmultimarcas.com.bo%2Fstorage%2Fimages%2Fproductos%2F2735-1-1677929136.jpg&f=1&nofb=1&ipt=f95cf1089f03aae8badae32aa512695ffbea66c109cff4d81d8fdfd20f154f75)
 ---
 
 **Última actualización**: Febrero 2026
