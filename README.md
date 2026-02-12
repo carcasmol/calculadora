@@ -197,3 +197,27 @@ Para reportar bugs o sugerir mejoras, contactar al equipo de desarrollo.
 
 **Última actualización**: Febrero 2026
 **Versión**: 1.0
+
+``m̀ermaid
+classDiagram
+
+class Producto {
+    -String nombre
+    -double precioBase
+    +Producto(String nombre, double precioBase)
+    +double getPrecioBase()
+}
+
+class CalculadoraIVA {
+    -double IVA
+    +double calcularPrecioFinal(double precio)
+}
+
+class Main {
+    +main(String[] args)
+}
+
+Main --> Producto : crea
+Main --> CalculadoraIVA : usa
+
+```
