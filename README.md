@@ -2,7 +2,40 @@
 
 ## Descripción General
 
-Calculadora web sencilla y funcional desarrollada en HTML, CSS y JavaScript puro. Permite realizar operaciones matemáticas básicas con una interfaz moderna y responsive.
+Calculadora web sencilla y funcional desarrollada en HTML, CSS y JavaScript puro. Permite realizar operaciones matemáticas básicas con una interfaz moderna y responsive.bitschips
+bitschips
+Update uml_avanzado_relaciones.md
+f5643be
+ · 
+Feb 12, 2026
+README.md
+	
+Create README.md
+	
+Feb 12, 2026
+diagrama_primero.md
+	
+Update diagrama_primero.md
+	
+Feb 12, 2026
+ejercicio_2.md
+	
+Update ejercicio_2.md
+	
+Feb 11, 2026
+java_code.md
+	
+Update java_code.md
+	
+Feb 11, 2026
+uml_avanzado_relaciones.md
+	
+Update uml_avanzado_relaciones.md
+	
+Feb 12, 2026
+Repository files navigation
+
+READM
 
 ## Características Principales
 
@@ -198,7 +231,7 @@ Para reportar bugs o sugerir mejoras, contactar al equipo de desarrollo.
 **Última actualización**: Febrero 2026
 **Versión**: 1.0
 
-``m̀ermaid
+```mermaid
 classDiagram
 
 class Producto {
