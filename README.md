@@ -65,7 +65,7 @@ El proyecto está contenido en un único archivo HTML que incluye:
 ## Componentes
 
 ### Pantalla
-- Campo de texto de solo lectura
+- Campo de texto de solo lecturaDocumento
 - Muestra el valor actual o el resultado
 - Alineación del texto a la derecha
 - Valor inicial: "0"
@@ -253,4 +253,55 @@ class Main {
 Main --> Producto : crea
 Main --> CalculadoraIVA : usa
 
+```
+
+```mermaid
+sequenceDiagram
+autonumber
+
+actor Usuario
+participant Main
+participant Controlador as ControladorCalculadora
+participant Entrada as EntradaConsola
+participant Gestor as GestorOperaciones
+participant Calc as Calculadora
+participant Salida as SalidaConsola
+
+Main->>Controlador: ejecutar()
+
+Controlador->>Entrada: leerNumero("Introduce el primer número")
+Entrada-->>Controlador: a
+
+Controlador->>Entrada: leerNumero("Introduce el segundo número")
+Entrada-->>Controlador: b
+
+Controlador->>Entrada: leerOperacion("Elige operación (+,-,*,/)")
+Entrada-->>Controlador: op
+
+Controlador->>Gestor: resolver(op, a, b)
+Gestor->>Calc: ejecutarOperación(op, a, b)
+
+alt op == "+"
+  Calc-->>Gestor: sumar(a,b)
+else op == "-"
+  Calc-->>Gestor: restar(a,b)
+else op == "*"
+  Calc-->>Gestor: multiplicar(a,b)
+else op == "/"
+  alt b == 0
+    Calc--x Gestor: DivisionPorCeroException
+    Gestor--x Controlador: DivisionPorCeroException
+    Controlador->>Salida: mostrarError("No se puede dividir entre cero")
+  else b != 0
+    Calc-->>Gestor: dividir(a,b)
+  end
+else operación no válida
+  Gestor-->>Controlador: error operación inválida
+  Controlador->>Salida: mostrarError("Operación no válida")
+end
+
+opt resultado calculado correctamente
+  Gestor-->>Controlador: resultado
+  Controlador->>Salida: mostrarResultado(resultado)
+end
 ```
